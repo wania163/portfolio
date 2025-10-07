@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* body {
+        background-color: rgb(0, 0, 29);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      } */
+    nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(18, 18, 62);
+  position: fixed;          /* 👈 stays fixed at the top */
+  top: 0;                  /* 👈 fixed to top edge */
+  left: 0;
+  width: 100%;             /* 👈 spans full width */
+  z-index: 1000;           /* 👈 stays above all content */
+}
+
+body {
+  background-color: rgb(0, 0, 29);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding-top: 80px;       /* 👈 prevents content from hiding under navbar */
+}
+
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(146, 146, 237);
+        font-size: 1.02rem;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 130px 0;
+      }
+      .firstSection > div {
+        width: 30%;
+        margin: 80px 0;
+      }
+      .leftSection {
+        /* background-color: red; */
+        font-size: 2rem;
+        /* margin: 50px 0; */
+      }
+      .rightSection img {
+        width: 80%;
+        margin-top: -50px;
+      }
+      .purple {
+        color: rgb(167, 111, 218);
+      }
+      #element {
+        color: rgb(167, 111, 218);
+        font-family: "Poppins", sans-serif;
+      }
+      .secondSection {
+  width: 80vw;
+  margin: auto;
+  padding-bottom: 300px;   /* 👈 add space for titles & descriptions */
+
+
+      }
+      .secondSection h1{
+       font-size: 1rem;
+       /* height: 80vh; */
+      }
+      main hr{
+        border: 0;
+        background-color: rgb(104, 114, 206);
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .text-gray{
+        color: gray;
+      }
+      .secondSection .box{
+        background-color: white;
+        width: 90vw;
+        height: 2px;
+        margin: 56px 0px;
+        display: flex;
+      }
+      .secondSection .vertical{
+        height: 250px;
+        width: 1px;
+        background-color: white;
+        margin: 0px 140px;
+      }
+      .image-top{
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+      .vertical-title{
+        position: relative;
+        top: 75px;
+        width: 150px;
+      }
+      .vertical-desc{
+        position: relative;
+        top:86px;
+        color: gray;
+        width: 150px;
+        font-size: 9px;
+        }
+       footer {
+    background-color: rgb(39 25 39);
+    padding: 40px 20px;
+    color: white;
+}
+
+.footer {
+  display: flex;
+  /* justify-content: space-around; */
+  flex-wrap: wrap;
+  /* margin: 23px 122px; */
+  
+}
+.footer h3{
+  margin: -20px;
+}
+footer {
+  background-color: rgb(18, 18, 62);
+  padding: 40px 0 20px 0;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+
+.footer-column {
+  min-width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-column h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: rgb(167, 111, 218);
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  color: gray;
+  margin-top: 30px;
+  border-top: 1px solid rgb(104, 114, 206);
+  padding-top: 10px;
+}
+
+.footer-bottom a {
+  color: gray;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: rgb(167, 111, 218);
+}
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 22px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: white;
+  background-color: transparent;
+  border: 2px solid rgb(167, 111, 218);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: rgb(167, 111, 218);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Nabeeha's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Nabeeha</span>
+          <div>And i am Passionate</div>
+          <!-- <div>Web Developer</div> -->
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn">Download resume</button>
+          <button class="btn">Visit Github</button></div>
+          
+        </div>
+        <div class="rightSection">
+          <img src="developer.png" alt="" />
+        </div>
+      </section>
+      <hr>
+      <section class="secondSection">
+        <span class="text-gray">What i have done so far</span>
+        <h1>Past Experience</h1>
+        <div class="box">
+          <div class="vertical">
+              <img width="23px" height="23px" class="image-top" src="HTML.png" alt="">
+
+            <div class="vertical-title">
+              HTML Developer (2012-2014)
+            </div>
+            <div class="vertical-desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, harum qui labore adipisci vitae doloribus nisi saepe perferendis quia iure vero animi fuga?
+            </div>
+          </div>
+          <div class="vertical"><img width="23px" height="23px" class="image-top" src="nodjs.png" alt="">
+
+            <div class="vertical-title">
+              Node.js Developer (2014-2016)
+            </div>
+            <div class="vertical-desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, harum qui labore adipisci vitae doloribus nisi saepe perferendis quia iure vero animi fuga?
+            </div></div>
+          <div class="vertical"><img width="23px" height="23px" class="image-top" src="React.png" alt="">
+
+            <div class="vertical-title">
+              React Developer (2012-2014)
+            </div>
+            <div class="vertical-desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, harum qui labore adipisci vitae doloribus nisi saepe perferendis quia iure vero animi fuga?
+            </div></div>
+          <div class="vertical"><img width="23px" height="23px" class="image-top" src="Figma.png" alt="">
+
+            <div class="vertical-title">
+              Figma Designer (2014-2016)
+            </div>
+            <div class="vertical-desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, harum qui labore adipisci vitae doloribus nisi saepe perferendis quia iure vero animi fuga?
+            </div></div>
+          <!-- <div class="vertical"><img width="23px" height="23px" class="image-top" src="python.png" alt=""> -->
+
+            <!-- <div class="vertical-title">
+             Python Developer (2016-2018)
+            </div>
+            <div class="vertical-desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, harum qui labore adipisci vitae doloribus nisi saepe perferendis quia iure vero animi fuga?
+            </div></div> -->
+        </div>
+        
+      </section>
+      
+    </main>
+    <!-- <footer>
+        <div class="footer">
+          <div class="footer-first">
+            <h3>Nabeeha's Developer Portfolio</h3>
+          </div>
+          <div class="footer-second"></div>
+          <div class="footer-third"></div>
+          <div class="footer-fourth"></div>
+        </div>
+      </footer> -->
+    <footer>
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Nabeeha's Developer<br>Portfolio</h3>
+    </div>
+
+    <div class="footer-column">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 <a href="#">nabeehaportfolio.com</a> | All rights reserved
+  </div>
+</footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Graphic Designer",
+          "Web Designer",
+          "Video Editor",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>

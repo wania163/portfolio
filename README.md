@@ -1,2 +1,2 @@
 # portfolio
-Programming in HTML , CSS nad JavaScript
+Programming in HTML , CSS nad JavaScript.
